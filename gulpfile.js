@@ -90,9 +90,6 @@ exports.browsersync = browsersync;
 exports.css = css;
 exports.images = images;
 exports.webp = webpImages;
-exports.html = html;
 exports.copy = copy;
 exports.delfile = delfile;
-
-
 exports.start = series(css, browsersync);

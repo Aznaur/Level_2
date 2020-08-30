@@ -1,3 +1,7 @@
-a {
-  color: black;
+@font-face {
+  font-family: "Exo2";
+  src: url("../fonts/Exo20-Thin.woff2") format("woff2"), url("../fonts/Exo20-Thin.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
 }

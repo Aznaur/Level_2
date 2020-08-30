@@ -1,3 +1,18 @@
 body {
-  font-size: 16px;
+  min-width: 320px;
+  font-size: 14px;
+  font-weight: normal;
+  color: $mainColor;
+  line-height: 16px;
+  font-family: $trebuchet, 'Arial', sans-serif;
+  background-color: $mainBgColor;
+  background-image: url('../img/bg.jpg');
+  background-repeat: repeat;
+  background-position: left top;
+  background-size: 140px 140px;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
