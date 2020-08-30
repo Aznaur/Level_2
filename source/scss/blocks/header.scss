@@ -1,0 +1,9 @@
+.main-header {
+  width: 100%;
+  background-color: grey;
+  height: 500px;
+
+  & h2 {
+    color: green;
+  }
+}
