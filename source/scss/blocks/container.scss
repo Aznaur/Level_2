@@ -1,6 +1,17 @@
 .container {
   max-width: 1120px;
-  padding: 0 10px;
   box-sizing: border-box;
   margin: 0 auto;
+}
+
+@media(max-width: $table-width) {
+  .container {
+    max-width: 1023px;
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .container {
+    max-width: 320px;
+  }
 }

@@ -1,62 +1,22 @@
 .cat-food {
-  padding-top: 45px;
+  padding-top: 37px;
 
   & h2 {
     margin: 0;
-    font-size: 36px;
     font-family: 'Exo2', 'Arial', sans-serif;
+    font-size: 36px;
     font-weight: 200;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 24px;
   }
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-}
-
-.food-packaging__item {
-  padding-top: 45px;
-  // display: flex;
-  // justify-content: flex-end;
-  // flex-shrink: 0;
-  // flex-direction: column;
-  position: relative;
-  width: 320px;
-  height: 480px;
-  flex-shrink: 0;
-
-  & input {
-    display: none;
-  }
-
-  & input:checked + .wrapper-item {
-    border-color: #d91667;
-
-    & svg path:last-of-type {
-      fill: #d91667;
-    }
-  }
-}
-
-
-.wrapper-item {
-  width: 100%;
-  height: 435px;
-  background-color: #ffffff;
-  border: 4px solid #1698d9;
-  border-top: none;
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  box-sizing: border-box;
-  cursor: pointer;
-
-  & svg {
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 }
 
