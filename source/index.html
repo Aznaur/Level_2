@@ -7,23 +7,99 @@
         <title>Level 2</title>
     </head>
     <body>
-      <h1 class="visually-hidden">Зоомагазин</h1>
-      <div class="container">
-        <section class="cat-food">
-          <h2>Ты сегодня покормил кота?</h2>
-          <ul class="cat-food__list food-packaging">
-            <li class="food-packaging__item">
-              <div class="wrapper-item">
-                <svg class="hov" viewBox="0 0 320 45">
-                  <path d="M4.83,43l41-41H308a10,10,0,0,1,10,10V43Z" fill="#fff"/>
-                  <path d="M308,4a8,8,0,0,1,8,8V41H9.66l37-37H308m0-4H45L0,45H320V12A12,12,0,0,0,308,0Z" fill="#1698d9"/>
-                </svg>
-              </div>
-            </li>
-            <li class="food-packaging__item"></li>
-            <li class="food-packaging__item"></li>
-          </ul>
-        </section>
-      </div>
+      <main class="page-main">
+        <h1 class="visually-hidden">Зоомагазин</h1>
+        <div class="container">
+          <section class="cat-food">
+            <h2>Ты сегодня покормил кота?</h2>
+            <ul class="cat-food__list product-list">
+              <li class="product-list__item item">
+                <input type="checkbox" class="select-food" name="foie-gras" id="foie-gras-fieild">
+                <div class="item__wrapper">
+                  <svg viewBox="0 0 320 45">
+                    <path d="M320,45H0L45,0H308a12,12,0,0,1,12,12Z" fill="#fff"/>
+                    <path d="M0,45,45,0H308a12,12,0,0,1,12,12V45h-4V14A10,10,0,0,0,306,4H45L4,45Z" fill="#1698d9"/>
+                  </svg>
+                  <div class="item__content">
+                    <p>Сказочное заморское яство</p>
+                    <p>Котэ не одобряет?</p>
+                    <div class="item__text">
+                      <p>Нямушка</p>
+                      <p>с фуа-гра</p>
+                      <div class="item__desc">
+                        <p><span>10</span> порций</p>
+                        <p>мышь в подарок</p>
+                      </div>
+                    </div>
+                    <div class="item__weight">
+                      <span>0,5</span>
+                      <span>кг</span>
+                    </div>
+                  </div>
+                </div>
+                <p>Чего сидишь? Порадуй котэ, <label for="foie-gras-fieild">купи.</label></p>
+                <p>Печень утки разварная с артишоками.</p>
+              </li>
+
+              <li class="product-list__item item">
+                <input type="checkbox" class="select-food" name="fish" id="fish-fieild">
+                <div class="item__wrapper">
+                  <svg viewBox="0 0 320 45">
+                    <path d="M320,45H0L45,0H308a12,12,0,0,1,12,12Z" fill="#fff"/>
+                    <path d="M0,45,45,0H308a12,12,0,0,1,12,12V45h-4V14A10,10,0,0,0,306,4H45L4,45Z" fill="#1698d9"/>
+                  </svg>
+                  <div class="item__content">
+                    <p>Сказочное заморское яство</p>
+                    <p>Котэ не одобряет?</p>
+                    <div class="item__text">
+                      <p>Нямушка</p>
+                      <p>с рыбой</p>
+                      <div class="item__desc">
+                        <p><span>40</span> порций</p>
+                        <p><span>2</span> мыши в подарок</p>
+                      </div>
+                    </div>
+                    <div class="item__weight">
+                      <span>2</span>
+                      <span>кг</span>
+                    </div>
+                  </div>
+                </div>
+                <p>Чего сидишь? Порадуй котэ, <label for="fish-fieild">купи.</label></p>
+                <p>Головы щучьи с чесноком да свежайшая сёмгушка.</p>
+              </li>
+
+              <li class="product-list__item item">
+                <input type="checkbox" class="select-food" name="chicken" id="chicken-fieild">
+                <div class="item__wrapper">
+                  <svg viewBox="0 0 320 45">
+                    <path d="M320,45H0L45,0H308a12,12,0,0,1,12,12Z" fill="#fff"/>
+                    <path d="M0,45,45,0H308a12,12,0,0,1,12,12V45h-4V14A10,10,0,0,0,306,4H45L4,45Z" fill="#1698d9"/>
+                  </svg>
+                  <div class="item__content">
+                    <p>Сказочное заморское яство</p>
+                    <p>Котэ не одобряет?</p>
+                    <div class="item__text">
+                      <p>Нямушка</p>
+                      <p>с курой</p>
+                      <div class="item__desc">
+                        <p><span>100</span> порций</p>
+                        <p><span>5</span> мышей в подарок</p>
+                        <p>заказчик доволен</p>
+                      </div>
+                    </div>
+                    <div class="item__weight">
+                      <span>5</span>
+                      <span>кг</span>
+                    </div>
+                  </div>
+                </div>
+                <p>Чего сидишь? Порадуй котэ, <label for="chicken-fieild">купи.</label></p>
+                <p>Головы щучьи с чесноком да свежайшая сёмгушка.</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
     </body>
 </html>
