@@ -14,6 +14,8 @@ const sourcemaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const del = require('del');
+const ghPages = require('gh-pages');
+const path = require('path');
 
 
 
@@ -85,10 +87,17 @@ function delfile () {
   return del('build');
 }
 
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+
+exports.deploy = deploy;
+
 exports.browsersync = browsersync;
 exports.css = css;
 exports.images = images;
 exports.webp = webpImages;
 exports.copy = copy;
 exports.delfile = delfile;
-exports.start = series(delfile, copy, css);
+exports.build = series(delfile, copy, css);
+exports.start = series(css, browsersync)
