@@ -9,7 +9,7 @@
   }
 
   &__wrapper:hover {
-    border-color: #2ea8e5;
+    border-color: #2ea8e5 ;
   }
   &__wrapper:hover svg path:last-of-type {
     fill: #2ea8e5;
@@ -122,11 +122,14 @@
     top: 1px;
     left: 48px;
     margin-top: 20px;
+
     &:last-of-type {
+      color: #e62e7a;
       display: none;
     }
   }
 }
+
 
 .item__text {
   color: #666666;

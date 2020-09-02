@@ -14,15 +14,15 @@
             <h2>Ты сегодня покормил кота?</h2>
             <ul class="cat-food__list product-list">
               <li class="product-list__item item">
-                <input type="checkbox" class="select-food" name="foie-gras" id="foie-gras-fieild">
-                <div class="item__wrapper">
+                <input type="checkbox" class="select-food" name="foie-gras" id="foie-gras">
+                <div class="item__wrapper" data-name="foie-gras">
                   <svg viewBox="0 0 320 45">
                     <path d="M320,45H0L45,0H308a12,12,0,0,1,12,12Z" fill="#f2f2f2"/>
                     <path d="M0,45,45,0H308a12,12,0,0,1,12,12V45h-4V14A10,10,0,0,0,306,4H45L4,45Z" fill="#1698d9"/>
                   </svg>
                   <div class="item__content">
-                    <p>Сказочное заморское яство</p>
-                    <p>Котэ не одобряет?</p>
+                    <p class="select">Сказочное заморское яство</p>
+                    <p class="selectHover">Котэ не одобряет?</p>
                     <div class="item__text">
                       <p>Нямушка</p>
                       <p>с фуа-гра</p>
@@ -37,21 +37,21 @@
                     </div>
                   </div>
                 </div>
-                <p>Чего сидишь? Порадуй котэ, <label for="foie-gras-fieild">купи.</label></p>
+                <p>Чего сидишь? Порадуй котэ, <label for="foie-gras">купи.</label></p>
                 <p>Печень утки разварная с артишоками.</p>
                 <p>Печалька, с <span>уткой</span> закончился.</p>
               </li>
 
               <li class="product-list__item item">
-                <input type="checkbox" class="select-food" name="fish" id="fish-fieild">
-                <div class="item__wrapper">
+                <input type="checkbox" class="select-food" name="fish" id="fish">
+                <div class="item__wrapper" data-name="fish">
                   <svg viewBox="0 0 320 45">
                     <path d="M320,45H0L45,0H308a12,12,0,0,1,12,12Z" fill="#f2f2f2"/>
                     <path d="M0,45,45,0H308a12,12,0,0,1,12,12V45h-4V14A10,10,0,0,0,306,4H45L4,45Z" fill="#1698d9"/>
                   </svg>
                   <div class="item__content">
-                    <p>Сказочное заморское яство</p>
-                    <p>Котэ не одобряет?</p>
+                    <p class="select">Сказочное заморское яство</p>
+                    <p class="selectHover">Котэ не одобряет?</p>
                     <div class="item__text">
                       <p>Нямушка</p>
                       <p>с рыбой</p>
@@ -66,21 +66,21 @@
                     </div>
                   </div>
                 </div>
-                <p>Чего сидишь? Порадуй котэ, <label for="fish-fieild">купи.</label></p>
+                <p>Чего сидишь? Порадуй котэ, <label for="fish">купи.</label></p>
                 <p>Головы щучьи с чесноком да свежайшая сёмгушка.</p>
                 <p>Печалька, с рыбой закончился.</p>
               </li>
 
               <li class="product-list__item item">
-                <input type="checkbox" class="select-food" name="chicken" id="chicken-fieild" disabled>
-                <div class="item__wrapper">
+                <input type="checkbox" class="select-food" name="chicken" id="chicken" disabled>
+                <div class="item__wrapper" data-name="chicken">
                   <svg viewBox="0 0 320 45">
                     <path d="M320,45H0L45,0H308a12,12,0,0,1,12,12Z" fill="#f2f2f2"/>
                     <path d="M0,45,45,0H308a12,12,0,0,1,12,12V45h-4V14A10,10,0,0,0,306,4H45L4,45Z" fill="#1698d9"/>
                   </svg>
                   <div class="item__content">
-                    <p>Сказочное заморское яство</p>
-                    <p>Котэ не одобряет?</p>
+                    <p class="select">Сказочное заморское яство</p>
+                    <p class="selectHover">Котэ не одобряет?</p>
                     <div class="item__text">
                       <p>Нямушка</p>
                       <p>с курой</p>
@@ -96,7 +96,7 @@
                     </div>
                   </div>
                 </div>
-                <p>Чего сидишь? Порадуй котэ, <label for="chicken-fieild">купи.</label></p>
+                <p>Чего сидишь? Порадуй котэ, <label for="chicken">купи.</label></p>
                 <p>Филе из цыплят с трюфелями в бульоне.</p>
                 <p>Печалька, с курой закончился.</p>
               </li>
@@ -104,5 +104,6 @@
           </section>
         </div>
       </main>
+      <script src="js/script.js"></script>
     </body>
 </html>
