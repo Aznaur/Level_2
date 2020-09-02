@@ -1,30 +1,25 @@
-"use strict";
+'use strict';
 (function () {
-  let item = document.querySelectorAll('[data-name]');
-  let select = document.querySelectorAll('.select');
-  let selectHover = document.querySelectorAll('.selectHover');
-  let itemWeight = document.querySelectorAll('.item__weight');
+  var item = document.querySelectorAll('[data-name]');
+  var select = document.querySelectorAll('.select');
+  var selectHover = document.querySelectorAll('.selectHover');
 
-
-
-  for (let i = 0; i < item.length; i++) {
-    item[i].addEventListener('click', function(evt) {
+  for (var i = 0; i < item.length; i++) {
+    item[i].addEventListener('click', function (evt) {
       evt.preventDefault();
-      let target = '#' + evt.currentTarget.dataset.name;
-      let check = document.querySelector(target);
+      var target = '#' + evt.currentTarget.dataset.name;
+      var check = document.querySelector(target);
 
       if (!check.disabled && check.checked) {
-				check.checked = '';
+        check.checked = '';
       } else if (!check.disabled && !check.checked) {
         check.checked = 'checked';
       }
-
-      console.log(check);
     });
 
-    item[i].addEventListener('mouseenter', function(evt){
-      let target = '#' + evt.currentTarget.dataset.name;
-      let check = document.querySelector(target);
+    item[i].addEventListener('mouseenter', function (evt) {
+      var target = '#' + evt.currentTarget.dataset.name;
+      var check = document.querySelector(target);
 
       if (!check.disabled && check.checked) {
         select[i].style.display = 'block';
@@ -34,9 +29,9 @@
       }
     });
 
-    item[i].addEventListener('mouseleave', function(evt){
-      let target = '#' + evt.currentTarget.dataset.name;
-      let check = document.querySelector(target);
+    item[i].addEventListener('mouseleave', function (evt) {
+      var target = '#' + evt.currentTarget.dataset.name;
+      var check = document.querySelector(target);
 
       if (!check.disabled && check.checked) {
         select[i].style.display = 'none';
@@ -48,12 +43,3 @@
   }
 
 })();
-
-
-// for (let j = 0; j < check.length; i++) {
-//   if (check[j].checked) {
-//     check[j].removeAttribute('checked');
-//   } else {
-//     check[j].setAttribute('checked', 'checked');
-//   }
-// }

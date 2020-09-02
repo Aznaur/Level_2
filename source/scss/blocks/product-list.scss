@@ -20,7 +20,7 @@
   }
 }
 
-@media(max-width: $table-width) {
+@media (max-width: $table-width) {
   .product-list {
     justify-content: center;
   }
@@ -39,11 +39,10 @@
     &:last-of-type {
       margin-right: 0;
     }
-
   }
 }
 
-@media(max-width: $mobile-width) {
+@media (max-width: $mobile-width) {
   .product-list__item {
     margin-right: 0;
 
@@ -52,4 +51,3 @@
     }
   }
 }
-
