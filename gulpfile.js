@@ -25,10 +25,10 @@ function css () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    // .pipe(csso())
-    // .pipe(rename('style.min.css'))
+    .pipe(csso())
+    .pipe(rename('style.min.css'))
     .pipe(sourcemaps.write("."))
-    .pipe(dest('source/css/'))
+    .pipe(dest('build/css/'))
     .pipe(server.stream());
 }
 
@@ -43,8 +43,6 @@ function browsersync () {
   });
 
   watch('source/scss/**/*.{scss,sass}', series('css'));
-  // watch('source/img/icon-*.svg', series('sprite', 'html', 'refresh'));
-  // watch('source/*.html', series('html', 'refresh'));
   watch('source/*.html', series(refresh));
 }
 
@@ -75,6 +73,7 @@ function copy () {
     'source/fonts/**/*.{woff,woff2}',
     'source/img/**',
     'source/js/**',
+    "source/**/*.html",
     'source//*.ico'
     ], {
       base: 'source'
@@ -92,4 +91,4 @@ exports.images = images;
 exports.webp = webpImages;
 exports.copy = copy;
 exports.delfile = delfile;
-exports.start = series(css, browsersync);
+exports.start = series(delfile, copy, css);
