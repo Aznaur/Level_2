@@ -27,10 +27,10 @@ function css () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(csso())
-    .pipe(rename('style.min.css'))
+    // .pipe(csso())
+    // .pipe(rename('style.min.css'))
     .pipe(sourcemaps.write("."))
-    .pipe(dest('build/css/'))
+    .pipe(dest('source/css/'))
     .pipe(server.stream());
 }
 

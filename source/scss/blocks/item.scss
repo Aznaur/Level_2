@@ -104,15 +104,16 @@
 
   & > svg {
     position: absolute;
-    top: 0;
+    top: 1px;
     left: 0;
+    height: 45px;
   }
 }
 
 .item__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 100%;
 
   & > p {
@@ -125,8 +126,11 @@
 
     &:last-of-type {
       color: #e62e7a;
-      display: none;
     }
+  }
+
+  &-toggle {
+    display: none;
   }
 }
 
@@ -165,6 +169,7 @@
   justify-content: center;
   flex-direction: column;
   align-self: flex-end;
+  margin-top: auto;
 
 
   & span:first-of-type {
