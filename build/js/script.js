@@ -23,8 +23,8 @@
         let check = document.querySelector(target);
 
         if (!check.disabled && check.checked) {
-          select1[i].classList.toggle('item__content-toggle');
-          select2[i].classList.toggle('item__content-toggle');
+          select1[i].classList.remove('item__content-toggle');
+          select2[i].classList.add('item__content-toggle');
           // itemWeight[i].style.backgroundColor = '#d91667';
 
         }
@@ -36,8 +36,8 @@
 
 
         if (!check.disabled && check.checked) {
-          select1[i].classList.toggle('item__content-toggle');
-          select2[i].classList.toggle('item__content-toggle');
+          select1[i].classList.add('item__content-toggle');
+          select2[i].classList.remove('item__content-toggle');
           // itemWeight[i].style.backgroundColor = '#e62e7a';
         }
       });
