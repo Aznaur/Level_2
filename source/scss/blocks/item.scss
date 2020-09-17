@@ -99,6 +99,8 @@
   background-repeat: no-repeat;
   background-position: -27px 162px;
   margin-bottom: 13px;
+  display: flex;
+  flex-direction: column;
 
   & > svg {
     position: absolute;
@@ -111,6 +113,7 @@
 .item__content {
   display: flex;
   flex-direction: column;
+  flex-basis: 435px;
 
   & > p {
     font-size: 16px;
@@ -130,7 +133,7 @@
   }
 
   & > div:first-of-type {
-    margin-bottom: 208px;
+    // margin-bottom: 208px;
   }
 }
 
@@ -169,7 +172,7 @@
   justify-content: center;
   flex-direction: column;
   align-self: flex-end;
-
+  margin-top: auto;
 
   & span:first-of-type {
     font-size: 42px;
